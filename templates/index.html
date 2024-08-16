@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Test Maker</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="loading-bar" id="loadingBar"></div>
+    <div class="header">
+        <h1>Spelling Test Maker</h1>
+    </div>
+    <div class="container">
+        <!--<h1>Word and Sentence Form</h1> -->
+        <form id="wordSentenceForm" method="POST" action="/">
+            <!-- Spelling Module Field -->
+<div class="form-group">
+    <h2>Spelling Module</h2>
+    <div class="input-group">
+        <label for="module">Module</label>
+        <input type="text" id="module" name="module" required>
+    </div>
+</div>
+
+            <!-- Generate 25 word and sentence fields -->
+            <div class="form-group">
+                <h2>Word 1</h2>
+                <div class="input-group">
+                    <label for="word1">Word</label>
+                    <input type="text" id="word1" name="word1">
+                </div>
+                <div class="input-group">
+                    <label for="sentence1">Sentence</label>
+                    <input type="text" id="sentence1" name="sentence1">
+                </div>
+            </div>
+
+            <!-- Fields 2 to 24 -->
+            <div class="form-group">
+                <h2>Word 2</h2>
+                <div class="input-group">
+                    <label for="word2">Word</label>
+                    <input type="text" id="word2" name="word2">
+                </div>
+                <div class="input-group">
+                    <label for="sentence2">Sentence</label>
+                    <input type="text" id="sentence2" name="sentence2">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 3</h2>
+                <div class="input-group">
+                    <label for="word3">Word</label>
+                    <input type="text" id="word3" name="word3">
+                </div>
+                <div class="input-group">
+                    <label for="sentence3">Sentence</label>
+                    <input type="text" id="sentence3" name="sentence3">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 4</h2>
+                <div class="input-group">
+                    <label for="word4">Word</label>
+                    <input type="text" id="word4" name="word4">
+                </div>
+                <div class="input-group">
+                    <label for="sentence4">Sentence</label>
+                    <input type="text" id="sentence4" name="sentence4">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 5</h2>
+                <div class="input-group">
+                    <label for="word5">Word</label>
+                    <input type="text" id="word5" name="word5">
+                </div>
+                <div class="input-group">
+                    <label for="sentence5">Sentence</label>
+                    <input type="text" id="sentence5" name="sentence5">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 6</h2>
+                <div class="input-group">
+                    <label for="word6">Word</label>
+                    <input type="text" id="word6" name="word6">
+                </div>
+                <div class="input-group">
+                    <label for="sentence6">Sentence</label>
+                    <input type="text" id="sentence6" name="sentence6">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 7</h2>
+                <div class="input-group">
+                    <label for="word7">Word</label>
+                    <input type="text" id="word7" name="word7">
+                </div>
+                <div class="input-group">
+                    <label for="sentence7">Sentence</label>
+                    <input type="text" id="sentence7" name="sentence7">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 8</h2>
+                <div class="input-group">
+                    <label for="word8">Word</label>
+                    <input type="text" id="word8" name="word8">
+                </div>
+                <div class="input-group">
+                    <label for="sentence8">Sentence</label>
+                    <input type="text" id="sentence8" name="sentence8">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 9</h2>
+                <div class="input-group">
+                    <label for="word9">Word</label>
+                    <input type="text" id="word9" name="word9">
+                </div>
+                <div class="input-group">
+                    <label for="sentence9">Sentence</label>
+                    <input type="text" id="sentence9" name="sentence9">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 10</h2>
+                <div class="input-group">
+                    <label for="word10">Word</label>
+                    <input type="text" id="word10" name="word10">
+                </div>
+                <div class="input-group">
+                    <label for="sentence10">Sentence</label>
+                    <input type="text" id="sentence10" name="sentence10">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 11</h2>
+                <div class="input-group">
+                    <label for="word11">Word</label>
+                    <input type="text" id="word11" name="word11">
+                </div>
+                <div class="input-group">
+                    <label for="sentence11">Sentence</label>
+                    <input type="text" id="sentence11" name="sentence11">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 12</h2>
+                <div class="input-group">
+                    <label for="word12">Word</label>
+                    <input type="text" id="word12" name="word12">
+                </div>
+                <div class="input-group">
+                    <label for="sentence12">Sentence</label>
+                    <input type="text" id="sentence12" name="sentence12">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 13</h2>
+                <div class="input-group">
+                    <label for="word13">Word</label>
+                    <input type="text" id="word13" name="word13">
+                </div>
+                <div class="input-group">
+                    <label for="sentence13">Sentence</label>
+                    <input type="text" id="sentence13" name="sentence13">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 14</h2>
+                <div class="input-group">
+                    <label for="word14">Word</label>
+                    <input type="text" id="word14" name="word14">
+                </div>
+                <div class="input-group">
+                    <label for="sentence14">Sentence</label>
+                    <input type="text" id="sentence14" name="sentence14">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 15</h2>
+                <div class="input-group">
+                    <label for="word15">Word</label>
+                    <input type="text" id="word15" name="word15">
+                </div>
+                <div class="input-group">
+                    <label for="sentence15">Sentence</label>
+                    <input type="text" id="sentence15" name="sentence15">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 16</h2>
+                <div class="input-group">
+                    <label for="word16">Word</label>
+                    <input type="text" id="word16" name="word16">
+                </div>
+                <div class="input-group">
+                    <label for="sentence16">Sentence</label>
+                    <input type="text" id="sentence16" name="sentence16">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 17</h2>
+                <div class="input-group">
+                    <label for="word17">Word</label>
+                    <input type="text" id="word17" name="word17">
+                </div>
+                <div class="input-group">
+                    <label for="sentence17">Sentence</label>
+                    <input type="text" id="sentence17" name="sentence17">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 18</h2>
+                <div class="input-group">
+                    <label for="word18">Word</label>
+                    <input type="text" id="word18" name="word18">
+                </div>
+                <div class="input-group">
+                    <label for="sentence18">Sentence</label>
+                    <input type="text" id="sentence18" name="sentence18">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 19</h2>
+                <div class="input-group">
+                    <label for="word19">Word</label>
+                    <input type="text" id="word19" name="word19">
+                </div>
+                <div class="input-group">
+                    <label for="sentence19">Sentence</label>
+                    <input type="text" id="sentence19" name="sentence19">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 20</h2>
+                <div class="input-group">
+                    <label for="word20">Word</label>
+                    <input type="text" id="word20" name="word20">
+                </div>
+                <div class="input-group">
+                    <label for="sentence20">Sentence</label>
+                    <input type="text" id="sentence20" name="sentence20">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 21</h2>
+                <div class="input-group">
+                    <label for="word21">Word</label>
+                    <input type="text" id="word21" name="word21">
+                </div>
+                <div class="input-group">
+                    <label for="sentence21">Sentence</label>
+                    <input type="text" id="sentence21" name="sentence21">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 22</h2>
+                <div class="input-group">
+                    <label for="word22">Word</label>
+                    <input type="text" id="word22" name="word22">
+                </div>
+                <div class="input-group">
+                    <label for="sentence22">Sentence</label>
+                    <input type="text" id="sentence22" name="sentence22">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 23</h2>
+                <div class="input-group">
+                    <label for="word23">Word</label>
+                    <input type="text" id="word23" name="word23">
+                </div>
+                <div class="input-group">
+                    <label for="sentence23">Sentence</label>
+                    <input type="text" id="sentence23" name="sentence23">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h2>Word 24</h2>
+                <div class="input-group">
+                    <label for="word24">Word</label>
+                    <input type="text" id="word24" name="word24">
+                </div>
+                <div class="input-group">
+                    <label for="sentence24">Sentence</label>
+                    <input type="text" id="sentence24" name="sentence24">
+                </div>
+            </div>
+
+            <!-- Last word (Word 25) -->
+            <div class="form-group">
+                <h2>Word 25</h2>
+                <div class="input-group">
+                    <label for="word25">Word</label>
+                    <input type="text" id="word25" name="word25">
+                </div>
+                <div class="input-group">
+                    <label for="sentence25">Sentence</label>
+                    <input type="text" id="sentence25" name="sentence25">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function showLoadingBar() {
+    var loadingBar = document.getElementById('loadingBar');
+    loadingBar.style.width = '100%';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    showLoadingBar();
+    setTimeout(function() {
+        var loadingBar = document.getElementById('loadingBar');
+        loadingBar.style.width = '0';
+    }, 1000);
+});
+
+document.getElementById('wordSentenceForm').addEventListener('submit', function(event) {
+    var inputs = document.querySelectorAll('input[type="text"]');
+    var allFilled = true;
+
+    inputs.forEach(function(input) {
+        if (!input.value.trim()) {
+            allFilled = false;
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+
+    if (!allFilled) {
+        event.preventDefault();
+        alert('Please fill out all fields before submitting.');
+    } else {
+        showLoadingBar();
+    }
+});
+
+    </script>
+</body>
+</html>
